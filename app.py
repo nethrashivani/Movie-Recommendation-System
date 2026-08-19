@@ -8,7 +8,11 @@ def fetch_poster(movie_id):
     api_key = st.secrets["TMDB_API_KEY"]
 
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
-    data = requests.get(url).json()
+
+    response = requests.get(url)
+    st.write(response.status_code, response.text)
+
+    data = response.json()
 
     poster_path = data.get("poster_path")
 
