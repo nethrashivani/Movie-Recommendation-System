@@ -77,10 +77,6 @@ streamlit run app.py
 
 The application will open in your browser.
 
-## Live Demo
-
-[View the Live Application](#)
-
 ## Project Highlights
 
 * Built a content-based movie recommendation system.
